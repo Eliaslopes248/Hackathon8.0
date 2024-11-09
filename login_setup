@@ -15,11 +15,14 @@
 
             --p: 'Khand', sans-serif;
             --h: 'Array', sans-serif; 
-            background-color: #0000FF;
+            background-image: url('https://t3.ftcdn.net/jpg/08/93/53/76/240_F_893537698_EXlMOozcdlFtQYNMwo62bHx7eOHKkq2H.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         form{
             border-radius: 20px;
             background-color: white;
+            opacity: 0.8;
             width: 30vw;
             height: 65vh;
             border: 1px solid;
@@ -28,18 +31,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 12px;
             box-shadow: 5px 5px 10px;
         }
+        form:hover{
+            opacity: 1;
+        }
         input{
-            width: 80px;
+            width: 200px;
         }
         input::selection{
             border-width: 0px;
         }
         button{
             transition: .2s;
-            color: white;
+            background-color: white;
             font-size: 20px;
             width: 80px;
             border-width: 0px;
@@ -58,10 +64,12 @@
         <form action="">
             <h1 style ="font-family: 'Array', sans-serif">Log In</h1>
             <div class="input-box">
-                <input style="font-family: 'Khand', sans-serif" type='text' placeholder="Username" required>
+                <p style="font-family: 'Khand', sans-serif">Username</p>
+                <input type='text' required>
             </div>
             <div class="input-box">
-                <input style="font-family: 'Khand', sans-serif" type='password' placeholder="Password" required>
+                <p style="font-family: 'Khand', sans-serif">Password</p>
+                <input type='password' required>
             </div>
             <button style="font-family: 'Khand', sans-serif" type = 'submit' class='btn'>Login</button>
             <div class='register-link'>
